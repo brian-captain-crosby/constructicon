@@ -1,5 +1,5 @@
 import Heading from '..'
-import { css } from '../../../lib/css'
+import { getCss } from '@everydayhero/stranger'
 
 describe('Heading', () => {
   it('should render a string', () => {

@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react'
 import Icon from '../icon'
 import compose from '../../lib/compose'
-import { withStyles } from '../../lib/css'
+import { withStyles } from '@everydayhero/stranger'
 import toggle from '../../lib/toggle'
 import options from '../../lib/traits/options'
 import styles from './styles'

@@ -1,6 +1,6 @@
 import TraitsProvider from '..'
 import Button from '../../button'
-import { css } from '../../../lib/css'
+import { getCss } from '@everydayhero/stranger'
 
 describe('TraitsProvider', () => {
   const getMountedElement = (el) => utils.getMountedElement(el, 'button')

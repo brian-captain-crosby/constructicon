@@ -1,5 +1,5 @@
 import ButtonSocial from '..'
-import { css } from '../../../lib/css'
+import { getCss } from '@everydayhero/stranger'
 import { colors } from '../../../lib/traits'
 
 describe('ButtonSocial', () => {

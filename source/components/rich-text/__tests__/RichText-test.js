@@ -1,5 +1,5 @@
 import RichText from '..'
-import { css } from '../../../lib/css'
+import { getCss } from '@everydayhero/stranger'
 
 describe('RichText', () => {
   it('should render a string of html', () => {

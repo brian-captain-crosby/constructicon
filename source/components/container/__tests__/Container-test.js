@@ -1,5 +1,5 @@
 import Container from '..'
-import { css } from '../../../lib/css'
+import { getCss } from '@everydayhero/stranger'
 import { shadows } from '../../../lib/traits'
 
 describe('Container', () => {

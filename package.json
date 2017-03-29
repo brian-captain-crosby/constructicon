@@ -6,7 +6,7 @@
   "scripts": {
     "start": "styleguidist server",
     "lint": "standard",
-    "test": "mocha source/**/**/__tests__/*.js",
+    "test": "mocha source/**/**/__tests_strangered__/*.js",
     "build": "babel source -d dist",
     "build:styleguide": "styleguidist build",
     "deploy:styleguide": "npm run build:styleguide && gh-pages -d styleguide",
@@ -43,6 +43,7 @@
     "react-slick": "^0.14.5"
   },
   "devDependencies": {
+    "@everydayhero/stranger": "^2.0.0",
     "babel-cli": "^6.14.0",
     "babel-core": "^6.21.0",
     "babel-loader": "^6.2.10",
@@ -66,6 +67,7 @@
     "webpack": "^1.14.0"
   },
   "peerDependencies": {
+    "@everydayhero/stranger": "^2.0.0",
     "react": "^15.4.2",
     "react-dom": "^15.4.2"
   }

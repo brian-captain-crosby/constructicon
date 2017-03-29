@@ -1,5 +1,5 @@
 import ProgressBar from '..'
-import { css } from '../../../lib/css'
+import { getCss } from '@everydayhero/stranger'
 
 import {
   colors,

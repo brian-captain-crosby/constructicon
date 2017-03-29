@@ -1,6 +1,6 @@
 import ButtonGroup from '..'
 import Button from '../../button'
-import { css } from '../../../lib/css'
+import { getCss } from '@everydayhero/stranger'
 
 describe('Button Group', () => {
   const getMountedElement = (el) => utils.getMountedElement(el, 'div')

@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react'
 import Icon from '../icon'
-import { withStyles } from '../../lib/css'
+import { withStyles } from '@everydayhero/stranger'
 import styles from './styles'
 
 const Metric = ({

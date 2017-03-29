@@ -1,6 +1,6 @@
 import Icon from '..'
 import * as icons from '../icons'
-import { css } from '../../../lib/css'
+import { getCss } from '@everydayhero/stranger'
 import { colors } from '../../../lib/traits'
 
 describe('Icon', () => {

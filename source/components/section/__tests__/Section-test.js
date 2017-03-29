@@ -1,5 +1,5 @@
 import Section from '..'
-import { css } from '../../../lib/css'
+import { getCss } from '@everydayhero/stranger'
 import { colors, rhythm, radiuses } from '../../../lib/traits'
 
 describe('Section', () => {

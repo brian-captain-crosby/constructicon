@@ -1,6 +1,6 @@
 import MetricGroup from '..'
 import Metric from '../../metric'
-import { css } from '../../../lib/css'
+import { getCss } from '@everydayhero/stranger'
 
 describe('MetricGroup', () => {
   it('should render a simple metric group', () => {

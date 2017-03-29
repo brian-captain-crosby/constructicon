@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react'
 import Button from '../button'
-import { withStyles } from '../../lib/css'
+import { withStyles } from '@everydayhero/stranger'
 import toggle from '../../lib/toggle'
 import compose from '../../lib/compose'
 import styles from './styles'

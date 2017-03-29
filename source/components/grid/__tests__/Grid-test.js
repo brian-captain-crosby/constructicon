@@ -1,6 +1,6 @@
 import Grid from '..'
 import GridColumn from '../../grid-column'
-import { css } from '../../../lib/css'
+import { getCss } from '@everydayhero/stranger'
 import { mediaQuery, rhythm } from '../../../lib/traits'
 
 describe('Grid', () => {
