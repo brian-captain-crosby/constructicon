@@ -174,7 +174,7 @@ export const calculateSpacing = (spacing, type = 'padding', args = {}) => {
   }
 }
 
-const spacingDirection = (direction, space, type, options) => {
+export const spacingDirection = (direction, space, type, options) => {
   const map = {
     t: [ 'Top' ],
     r: [ 'Right' ],

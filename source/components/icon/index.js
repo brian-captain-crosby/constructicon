@@ -1,5 +1,5 @@
 import React, { PropTypes } from 'react'
-import { withStyles } from '@everydayhero/stranger'
+import { withStyles } from '../../lib/css'
 import styles from './styles'
 import * as icons from './icons'
 

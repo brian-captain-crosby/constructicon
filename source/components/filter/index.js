@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react'
 import Icon from '../icon'
-import { withStyles } from '@everydayhero/stranger'
+import { withStyles } from '../../lib/css'
 import options from '../../lib/traits/options'
 import styles from './styles'
 

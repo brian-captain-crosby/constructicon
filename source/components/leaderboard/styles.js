@@ -1,6 +1,6 @@
 import merge from 'lodash/merge'
 
-export default (props, traits) => {
+export default ({ props, traits }) => {
   const {
     background,
     foreground,

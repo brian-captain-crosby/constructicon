@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react'
 import Slider from 'react-slick'
 import compose from '../../lib/compose'
-import { withStyles } from '@everydayhero/stranger'
+import { withStyles } from '../../lib/css'
 import styles from './styles'
 
 import Icon from '../icon'

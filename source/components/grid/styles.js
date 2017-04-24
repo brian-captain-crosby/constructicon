@@ -1,4 +1,4 @@
-export default (props, traits) => {
+export default ({ props, traits }) => {
   const {
     calculateSpacing
   } = traits

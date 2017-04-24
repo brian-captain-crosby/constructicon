@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react'
 import ReactModal from 'react-modal'
 import Icon from '../icon'
-import { withStyles } from '@everydayhero/stranger'
+import { withStyles } from '../../lib/css'
 import styles from './styles'
 
 /**

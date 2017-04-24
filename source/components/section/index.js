@@ -1,5 +1,5 @@
 import React, { PropTypes } from 'react'
-import { withStyles } from '@everydayhero/stranger'
+import { withStyles } from '../../lib/css'
 import options from '../../lib/traits/options'
 import styles from './styles'
 
