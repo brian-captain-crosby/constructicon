@@ -1,11 +1,14 @@
 import React, { Component, PropTypes } from 'react'
-import cxs from 'cxsync'
-import stranger, { withStyles } from '@everydayhero/stranger'
+import stranger, { addRule, withStyles } from '@everydayhero/stranger'
 import * as defaultTraits from '../traits'
 
 stranger.defaultTraits = defaultTraits
 
-export { withStyles }
+export {
+  addRule,
+  withStyles
+}
+
 
 /**
 * Turns a styles object into an object containing the cxs class name for each key

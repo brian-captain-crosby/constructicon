@@ -1,8 +1,6 @@
 import merge from 'lodash/merge'
 
 export default ({ props, traits }) => {
-  console.log('props', props)
-  console.log('traits', traits)
   const {
     measures,
     rhythm,

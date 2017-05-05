@@ -1,5 +1,5 @@
 import Accordion from '..'
-import { addRule, renderCssToString } from '@everydayhero/stranger'
+import { addRule } from '@everydayhero/stranger'
 import { colors } from '../../../lib/traits'
 
 describe('Accordion', () => {
@@ -19,64 +19,54 @@ describe('Accordion', () => {
       </Accordion>
     )
     const accordion = wrapper.find('Accordion')
-    addRule({
-      height: 10
-    })
-    console.log('renderCssToString()', renderCssToString())
-    expect(true).to.eql(true)
-    // const rule = utils.findRule(css.rules, accordion.prop('classNames').body)
-    // expect(rule.css).to.contain(`display:none`)
+    expect(accordion.prop('toggled')).to.be.false
   })
-  //
-  // it('should render a simple open accordion', () => {
-  //   const wrapper = mount(
-  //     <Accordion title='Question here?' toggled>
-  //       <p>Answer here...</p>
-  //     </Accordion>
-  //   )
-  //   const accordion = wrapper.find('Accordion')
-  //   const rule = utils.findRule(css.rules, accordion.prop('classNames').body)
-  //   expect(rule.css).to.contain(`display:block`)
-  // })
-  //
-  // it('should allow us to open accordions', () => {
-  //   const wrapper = mount(
-  //     <Accordion title='Question here?'>
-  //       <p>Answer here...</p>
-  //     </Accordion>
-  //   )
-  //   const accordion = wrapper.find('Accordion')
-  //   const headerClass = accordion.prop('classNames').head
-  //   wrapper.find(`.${headerClass}`).simulate('click')
-  //
-  //   const rule = utils.findRule(css.rules, accordion.prop('classNames').body)
-  //   expect(rule.css).to.contain(`display:block`)
-  // })
-  //
-  // it('should allow us to close accordions', () => {
-  //   const wrapper = mount(
-  //     <Accordion title='Question here?' toggled>
-  //       <p>Answer here...</p>
-  //     </Accordion>
-  //   )
-  //   const accordion = wrapper.find('Accordion')
-  //   const headerClass = accordion.prop('classNames').head
-  //   wrapper.find(`.${headerClass}`).simulate('click')
-  //
-  //   const rule = utils.findRule(css.rules, accordion.prop('classNames').body)
-  //   expect(rule.css).to.contain(`display:none`)
-  // })
-  //
-  // it('should allow us to set the active color of accordions', () => {
-  //   const wrapper = mount(
-  //     <Accordion title='Question here?' color='secondary' toggled>
-  //       <p>Answer here...</p>
-  //     </Accordion>
-  //   )
-  //   const accordion = wrapper.find('Accordion')
-  //   const rule = utils.findRule(css.rules, accordion.prop('classNames').root)
-  //   expect(rule.css).to.contain(`border-left:2px solid ${colors.secondary}`)
-  // })
+
+  it('should render a simple open accordion', () => {
+    const wrapper = mount(
+      <Accordion title='Question here?' toggled>
+        <p>Answer here...</p>
+      </Accordion>
+    )
+    const accordion = wrapper.find('Accordion')
+    expect(accordion.prop('toggled')).to.be.true
+  })
+
+  it('should allow us to open accordions', () => {
+    const wrapper = mount(
+      <Accordion title='Question here?'>
+        <p>Answer here...</p>
+      </Accordion>
+    )
+    const accordion = wrapper.find('Accordion')
+    const headerClass = utils.getClassName(accordion, 'head')
+    wrapper.find(headerClass).simulate('click')
+    expect(accordion.prop('toggled')).to.be.true
+  })
+
+  it('should allow us to close accordions', () => {
+    const wrapper = mount(
+      <Accordion title='Question here?' toggled>
+        <p>Answer here...</p>
+      </Accordion>
+    )
+    const accordion = wrapper.find('Accordion')
+    const headerClass = utils.getClassName(accordion, 'head')
+    wrapper.find(headerClass).simulate('click')
+    expect(accordion.prop('toggled')).to.be.false
+  })
+
+  it.only('should allow us to set the active color of accordions', () => {
+    const wrapper = mount(
+      <Accordion title='Question here?' color='secondary' toggled>
+        <p>Answer here...</p>
+      </Accordion>
+    )
+    const accordion = wrapper.find('Accordion')
+    const className = utils.getClassName(accordion, 'root')
+    // const rule = utils.findRule(css.rules, accordion.prop('classNames').root)
+    // expect(rule.css).to.contain(`border-left:2px solid ${colors.secondary}`)
+  })
   //
   // it('should allow us to remove the border', () => {
   //   const wrapper = mount(

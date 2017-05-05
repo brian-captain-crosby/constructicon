@@ -8,5 +8,10 @@ module.exports = {
   getMountedElement: (el, selector) => {
     const wrapper = mount(el)
     return wrapper.find(selector)
+  },
+
+  getClassName: (element, cls) => {
+    const classNames = element.prop('classNames')[cls] || ''
+    return `.${classNames.split(' ').join('.')}`
   }
 }
